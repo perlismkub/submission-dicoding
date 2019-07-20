@@ -1,0 +1,134 @@
+*, .wrapper{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+#sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: rgba(25, 181, 254, 0.9);
+    left: -250px;
+    transition: all 500ms linear;
+}
+#sidebar.active{
+    left: 0px;
+}
+
+#sidebar ul li{
+    list-style: none;
+    border-bottom: 2px solid #eaeaea;
+    padding-left: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+#sidebar ul li a{
+    padding: 20px 10px;
+}
+#sidebar ul li:hover{
+    background: #555555;
+}
+
+#sidebar .toggle-button{
+    position: absolute;
+    left: 280px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.toggle-button span{
+    background: #696969;
+    width: 30px;
+    height: 5px;
+    display: block;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+
+.photo{
+    background: url(./img/Foto.jpg);
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 30px;
+}
+.photo img{
+    border-radius: 50%;
+}
+.name{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+}
+#profile{
+    padding: 50px 0;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.title{
+    text-align: center;
+}
+#profile p{
+    text-align: justify;
+}
+#profile h2{
+    margin: 20px 0;
+}
+
+.contact li{
+    margin: 15px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+.footer-text{
+    color: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+    background: #555555;
+    padding: 25px 0;
+}
+
+.years{
+    list-style: none;
+    font-weight: bold;
+}
+
+.school{
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.reward{
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.place{
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 760px){
+    #profile{
+        padding: 80px 0;
+    }
+}
